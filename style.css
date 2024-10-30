@@ -32,6 +32,8 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
+
+/* Header */
 .header{
     position: fixed;
     top: 0;
@@ -78,6 +80,8 @@ body{
     color: var(--main-color);
     display: none;
 }
+
+/* Home */
 section{
     min-height: 100vh;
     padding: 10rem 12%;
@@ -219,20 +223,16 @@ span{
 }
 @keyframes words{
     0%,
-    30%{
+    32%{
         content: "Front-End Developer";
     }
-    31%,
-    50%{
-        content: "Web Designer";
+    33%,
+    66%{
+        content: "React Js Developer";
     }
-    51%,
-    70%{
-        content: "Apps Developer";
-    }
-    71%,
+    67%,
     100%{
-        content: "It Trainer";
+        content: "Web Designer";
     }
 }
 @keyframes typing{
@@ -261,6 +261,72 @@ span{
     }
 }
 
+/* About */
+.about .connect {
+    display: flex;
+    gap: 40px;
+}
+
+.about .singleBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease-in-out;
+}
+.about .singleBox:hover{
+    transform: translateY(-5px);
+}
+.about .singleBox h2{
+    font-size: 25px;
+}
+.about .singleBox h3{
+    font-size: 20px;
+    color: gray;
+}
+.about .singleBox a{
+    font-size: 20px;
+    color: gray;
+}
+.about .contactBox {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.about .aboutContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.about .work {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about .workBox {
+    border: 2px solid yellow;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 40px;
+    height: 200px;
+    width: 300px;
+    transition: 0.5s ease-in-out;
+}
+.about .workBox:hover{
+    transform: scale(1.05);
+}
+.about .workBox h1 {
+    font-size: 60px;
+}
+.about .workBox p {
+    font-size: 20px;
+}
+
+/* Education */
 
 .heading{
     font-size: 8rem;
@@ -354,6 +420,8 @@ span{
     background-color: var(--bg-color);
     width: 50px;
 }
+
+/* Service */
 .services{
     background: var(--bg-color);
     color: black;
@@ -377,31 +445,29 @@ span{
     transition: 0.4s ease-in-out;
 }
 .service-box:hover{
-    background: white;
-    color: black;
-    border: 5px solid var(--main-color);
+    border: 5px solid var(--text-color);
     transform: scale(1.03);
 }
 .service-box .service-info{
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: start;
     max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
+    align-items: start;
     padding: 5rem 5rem;
 }
 .service-info h4{
     font-size: 3rem;
     font-weight: 800;
     line-height: 2;
+    text-align: start;
 }
 .service-info p{
     font-size: 1.6rem;
     font-weight: 600;
     max-height: 100px;
     line-height: 1.7;
-    margin: auto;
+    text-align: start;
 }
 /* Project section */
 
@@ -419,7 +485,6 @@ span{
     border: 1px solid #00ffee;
     border-radius: 10px;
     transition: 0.5s ease-in-out;
-    padding-bottom: 20px;
 }
 .project-section .project-box:hover{
     transform: scale(1.05);
@@ -427,7 +492,7 @@ span{
 }
 .project-section .project-img {
     width: 100%;
-    height: 70%;
+    height: 240px;
     border-radius: 10px;
 }
 .project-section .project-box h2,p {
